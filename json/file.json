@@ -1,0 +1,23 @@
+{data: {,…}, context: {}}
+data: {,…}
+creator: {_id: "5e6ea8e7d7e5cc2f8b119173", uid: "6b30b6f0-670a-11ea-8b78-3739fc2eb043", id: "isr12@gmail.com",…}
+_id: "5e6ea8e7d7e5cc2f8b119173"
+uid: "6b30b6f0-670a-11ea-8b78-3739fc2eb043"
+id: "isr12@gmail.com"
+name: "israel"
+email: "isr12@gmail.com"
+username: "isr321"
+__v: 0
+GetMailEveryDayAboutGivenTasks: "no"
+GetMailEveryDayAboutMyTasks: "no"
+GetMailEveryWeekAboutGivenTasks: "no"
+GetMailEveryWeekAboutMyTasks: "no"
+provider: "local"
+roles: ["authenticated"]
+0: "authenticated"
+date: "2020-03-15T22:45:56.267Z"
+entity: "5e6ea9ccd7e5cc71bf119175"
+entityType: "project"
+updateField: "comment"
+current: "sad"
+context: {}
