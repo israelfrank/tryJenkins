@@ -9,6 +9,9 @@ pipeline {
          }
         else if(env.GIT_BRANCH == 'kiki'){
             echo env.GIT_BRANCH
+         }
+         else {
+            echo env.GIT_BRANCH
          }     
         }
        }
