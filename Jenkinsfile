@@ -2,7 +2,8 @@ pipeline {
     agent any
     stages {
       script {
-       if(env.GIT_BRANCH =='origin/master' )
+       if(env.GIT_BRANCH =='origin/master' ){
+
        echo env.GIT_BRANCH
         stage('Build') {
           steps {
@@ -10,6 +11,7 @@ pipeline {
               sh 'docker login -u israelfrank -p 0533346872'
               sh 'docker push israelfrank/learn_docker:latest'
         }   
+       }
       }
     }
   }
