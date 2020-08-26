@@ -1,16 +1,14 @@
 pipeline {
  agent any
    stages {
-     script{
-       if (env.GIT_BRANCH == 'master') {
-         stage('Build') {
+     stage('Build') {
+       script{
+         if (env.GIT_BRANCH == 'master') {
             steps {
                echo 'master'
             }
          }
-       } 
-      else {
-         stage('Build') {
+         else {
             steps {
               echo 'branch' 
             } 
