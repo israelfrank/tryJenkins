@@ -1,21 +1,22 @@
 pipeline {
-   agent any
+ agent any
    stages {
-    stage('Build') {
-      steps {
-       script {
-        if(env.GIT_BRANCH == 'master') {
-          echo env.GIT_BRANCH
+     script{
+       if (env.GIT_BRANCH == 'master') {
+         stage('Build') {
+            steps {
+               echo 'master'
+            }
          }
-        else if(env.GIT_BRANCH == 'kiki'){
-            echo env.GIT_BRANCH
+       } 
+      else {
+         stage('Build') {
+            steps {
+              echo 'branch' 
+            } 
          }
-         else {
-            echo env.GIT_BRANCH
-         }     
-        }
-       }
       }
-     }
     }
+  }
+}
   
