@@ -3,13 +3,18 @@ pipeline {
       stages {
          stage('master') {
             when {
-               branch 'master' , 'kiki'      
+               branch 'master' ,      
             }
             steps {
                echo 'master'
             }
          }
          stage('branch'){
+            when { 
+               not { 
+                  branch 'master'
+               }
+            }
             steps {
                echo 'another branch'
             }
