@@ -1,9 +1,9 @@
 pipeline {
    agent any
       stages {
-         stage('master' , 'kiki') {
+         stage('master') {
             when {
-               branch 'master'      
+               branch 'master' , 'kiki'      
             }
             steps {
                echo 'master'
