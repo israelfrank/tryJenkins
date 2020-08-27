@@ -2,12 +2,9 @@ pipeline {
    agent any
       stages {
          stage('master') {
-            when {
-               anyof {
-                  branch 'master';
-                   branch 'kiki'      
-               }
-            }
+            when {branch 'master || kiki' }
+                  
+                      
             steps {
                echo 'master'
             }
