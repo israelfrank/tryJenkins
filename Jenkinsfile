@@ -3,7 +3,7 @@ pipeline {
       stages {
          stage('master') {
             when {
-               branch 'master' ,      
+               branch 'master'      
             }
             steps {
                echo 'master'
