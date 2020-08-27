@@ -3,9 +3,7 @@ pipeline {
       stages {
          stage('master') {
             when {branch 'master || kiki' }
-                  
-                      
-            steps {
+              steps {
                echo 'master'
             }
          }
