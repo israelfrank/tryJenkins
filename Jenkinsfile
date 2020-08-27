@@ -10,7 +10,6 @@ pipeline {
             }
          }
          stage('branch'){
-            branch ''
             steps {
                echo 'another branch'
             }
