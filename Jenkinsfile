@@ -4,9 +4,7 @@ pipeline {
       stages {
          stage('master') {
             when {
-             anyOf {
-                  branch 'master'
-               }          
+                  branch 'master'         
             }
             steps {
                echo 'master'
