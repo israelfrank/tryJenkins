@@ -1,10 +1,11 @@
 pipeline {
    agent any
+   
       stages {
          stage('master') {
             when {
              anyOf {
-                  branch 'master'; branch 'kiki'
+                  branch 'master'
                }          
             }
             steps {
